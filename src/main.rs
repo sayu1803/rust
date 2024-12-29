@@ -28,17 +28,27 @@
 //}
 
 //Vector
-fn main(){
-    let mut v:Vec<i32>=Vec::new();
-    let mut c= Vec::<i32>::new();
+//fn main(){
+//    let mut v:Vec<i32>=Vec::new();
+//    let mut c= Vec::<i32>::new();
+//
+//    let d=vec![1,2,3,4,5,6,7,8,9];
+//
+//    v.push(1);
+//    v.push(2);
+//    c.push(3);
+//
+//    println!("elements in Vector v is {:?}",d);
+//    println!("elements in Vector v is {:?}",v);
+//    println!("elements in Vector v is {:?}",c);
+//}
 
-    let d=vec![1,2,3,4,5,6,7,8,9];
+//           I/o
 
-    v.push(1);
-    v.push(2);
-    c.push(3);
+use std::io;
 
-    println!("elements in Vector v is {:?}",d);
-    println!("elements in Vector v is {:?}",v);
-    println!("elements in Vector v is {:?}",c);
+fn main() {
+    let mut input = String::new();
+    io::stdin().read_line(&mut input).expect("Failed to read input");
+    println!("User input: {}", input.trim());
 }
